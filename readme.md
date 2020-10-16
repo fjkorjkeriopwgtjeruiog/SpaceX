@@ -16,7 +16,8 @@ Tambien, en caso de que existan, se incluye en la información de las noticias u
 Necesitaremos un fichero js base, 3 ficheros para las páginas, un js para la cabecera y otra para el pie de página.
 Hay que diferenciar entre los ficheros de la página principal, la cabecera y el pie, que van en la carpeta de componentes, y los ficheros de las páginas, que iran a la carpeta de páginas.
 
-Necesitaremos unos ficheros scss en los que guardar el estilo de las páginas.
+Necesitaremos unos ficheros scss en los que guardar el estilo de las páginas. Hay un total de 5, aparte de un fichero extra para importar la información de los ficheros.
+Estos son el fichero para el footer, el header, las páginas y otros 2 ficheros scss para componentes globales.
 
 Ya que los datos estan sacados de una API, no necesitaremos una BBDD, pero si necesitamos un js que incluya la lógica de la busqueda de información en la API y de como se mostrará en pantalla dicha información.
 
@@ -29,12 +30,15 @@ La página principal, marcada como "Last New" en la cabecera, muestra la última
 
 ## Obstaculos que nos fuimos encontrando
 
--Al acceder a los datos de la BBDD, algunas variables no se cargaban y daba errores. Se soluciono haciendo que tras obtener los datos se espere a que esten realmente cargados en el array o variable.
--Algunas variables como el enlace a wikipedia o a youtube pueden estar vacios, por lo que tuvimos que hacer que al mostrar la noticia se compruebe si la variable tiene valor nulo, y en caso afirmativo no se mostrara en pantalla las etiquetas que debian mostrar el valor de dichas variables.
--Las etiquetas para mostrar videos no funcionaban. Por ejemplo, al usar "iframe" daba un error debido a que youtube no permitia usarlo para mostrar sus videos en otras páginas. Afortunadamente encontramos una libreria que si funcionó, llamada "ReactPlayer".
--Estuvimos adaptando el proyecto para que se pueda ver tambien en dispositivos moviles. Esto esta obligando a volver responsivos algunos elementos como las imagenes y los videos. Pero en el caso de los videos daba errores en los que se generaban margenes vacios, por lo que tuvimos que eliminar al final esto.
+Al acceder a los datos de la BBDD, algunas variables no se cargaban y daba errores. Se soluciono haciendo que tras obtener los datos se espere a que esten realmente cargados en el array o variable.
 
-Agradecimientos a Alexander Wheldon por sus aportaciones para solucionar los problemas.
+Algunas variables como el enlace a wikipedia o a youtube pueden estar vacios, por lo que tuvimos que hacer que al mostrar la noticia se compruebe si la variable tiene valor nulo, y en caso afirmativo no se mostrara en pantalla las etiquetas que debian mostrar el valor de dichas variables.
+
+Las etiquetas para mostrar videos no funcionaban. Por ejemplo, al usar "iframe" daba un error debido a que youtube no permitia usarlo para mostrar sus videos en otras páginas. Afortunadamente encontramos una libreria que si funcionó, llamada "ReactPlayer".
+
+Estuvimos adaptando el proyecto para que se pueda ver tambien en dispositivos moviles. Esto esta obligando a volver responsivos algunos elementos como las imagenes y los videos. Pero en el caso de los videos daba errores en los que se generaban margenes vacios, por lo que tuvimos que eliminar al final esto.
+
+(Agradecimientos a Alexander Wheldon por sus aportaciones para solucionar los problemas)
 
 ## Wireframe
 
