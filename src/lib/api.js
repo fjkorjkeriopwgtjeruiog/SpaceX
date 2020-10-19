@@ -23,9 +23,7 @@ export const Informacion = (space) => {
         {space.links.wikipedia && (
           <li>
             Wikipedia:{' '}
-            <a href={space.links.wikipedia} target="_blank">
-              {space.links.wikipedia}
-            </a>
+            <a href={space.links.wikipedia}>{space.links.wikipedia}</a>
           </li>
         )}
       </ul>
@@ -50,7 +48,7 @@ export const Informacion = (space) => {
             {space.links.reddit.campaign && (
               <li>
                 Campaign:{' '}
-                <a href={space.links.reddit.campaign} target="_blank">
+                <a href={space.links.reddit.campaign}>
                   {space.links.reddit.campaign}
                 </a>
               </li>
@@ -58,7 +56,7 @@ export const Informacion = (space) => {
             {space.links.reddit.launch && (
               <li>
                 Launch:{' '}
-                <a href={space.links.reddit.launch} target="_blank">
+                <a href={space.links.reddit.launch}>
                   {space.links.reddit.launch}
                 </a>
               </li>
@@ -66,7 +64,7 @@ export const Informacion = (space) => {
             {space.links.reddit.media && (
               <li>
                 Media:{' '}
-                <a href={space.links.reddit.media} target="_blank">
+                <a href={space.links.reddit.media}>
                   {space.links.reddit.media}
                 </a>
               </li>
@@ -74,7 +72,7 @@ export const Informacion = (space) => {
             {space.links.reddit.recovery && (
               <li>
                 Recovery:{' '}
-                <a href={space.links.reddit.recovery} target="_blank">
+                <a href={space.links.reddit.recovery}>
                   {space.links.reddit.recovery}
                 </a>
               </li>
